@@ -43,69 +43,64 @@ Exemplo prático:
   <li>Abrir o VS Code</li>
   <li>Criar um arquivo “pilha.js”</li>
 </ul>
-  
-<p>var elementos = [];</p>
-<p>var topo = -1;</p>
-<p>const max = 10;</p>
 <br>
-<p>function push(num) {</p>
-	<p>if (topo < max) {</p>
-		<p>topo = topo + 1;</p>
-		<p>elementos[topo] = num;</p>
-<p>} else {</p>
-	<p>console.log(“Pilha está cheia.”);</p>
-<p>}</p>
-<p>}</p>
+<br>var elementos = [];
+<br>var topo = -1;
+<br>const max = 10;
 <br>
-<p>function pop(num) {</p>
-	<p>if (topo != -1) {</p>
-		<p>let num = elementos[topo];</p>
-		<p>topo = topo – 1;</p>
-		<p>return num;</p>
-<p>} else {</p>
-	<p>console.log(“Pilha está vazia.”);</p>
-<p>}</p>
-<p>}</p>
+<br>function push(num) {
+	<br>if (topo < max) {
+		<br>topo = topo + 1;
+		<br>elementos[topo] = num;
+<br>} else {
+	<br>console.log(“Pilha está cheia.”);
+<br>}
+<br>}
 <br>
-<p>function estaVazia() {</p>
-<p>return topo === -1;</p>
-<p>}</p>
+<br>function pop(num) {
+	<br>if (topo != -1) {
+		<br>let num = elementos[topo];
+		<br>topo = topo – 1;
+		<br>return num;
+<br>} else {
+	<br>console.log(“Pilha está vazia.”);
+<br>}
+<br>}
 <br>
-// para inserir elementos na pilha
-
-push(10);</p>
-push(20);</p>
-push(30);</p>
-
+<br>function estaVazia() {
+<br>return topo === -1;
+<br>}
+<br>// para inserir elementos na pilha
+<br>push(10);
+<br>push(20);
+<br>push(30);
 <br>
-// para visualizar como ficou o Array
+<br>// para visualizar como ficou o Array
 <br>
 console.log(elementos);
 <br>
-// para retirar elementos da pilha
+<br>// para retirar elementos da pilha
+<br>console.log(pop());
+<br>console.log(pop());
+<br>console.log(pop());
 <br>
-console.log(pop());
+<br>//usando como exemplo o número 10
+<br>var numDecimal = 10;
+<br>var resto;
 <br>
-console.log(pop());
 <br>
-console.log(pop());
+<br>console.log(“Hora de empilhar!!”);
+<br>while (numDecimal != 0) {
+	<br>resto = parseInt(numDecimal % 2);
+	<br>push(resto);
+	<br>numDecimal = parseInt(numDecimal / 2);
+<br>}
 <br>
-<p>//usando como exemplo o número 10</p>
-<p>var numDecimal = 10;</p>
-<p>var resto;</p>
+<br>console.log(“Desempilhando tudo...”);
+<br>while (!estaVazia()){
+	<br>console.log(pop());
+<br>}
 <br>
-<p>console.log(“Hora de empilhar!!”);</p>
-<p>while (numDecimal != 0) {</p>
-	<p>resto = parseInt(numDecimal % 2);</p>
-	<p>push(resto);</p>
-	<p>numDecimal = parseInt(numDecimal / 2);</p>
-<p>}</p>
-<br>
-<p>console.log(“Desempilhando tudo...”);</p>
-<p>while (!estaVazia()){</p>
-	<p>console.log(pop());</p>
-<p>}</p>
-
 
 ## 3.4	Filas e Listas
 
