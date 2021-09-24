@@ -1,6 +1,6 @@
 ## ESTRUTURA DE DADOS
 
-### Introdução
+### 3.1 Introdução
 
 #### Estrutura de dados clássicas: maneira como a informação é armazenada.
 <ul>
@@ -13,4 +13,6 @@
 <ul>
   <li>Algoritmos de ordenação.</li>
 </ul>
+
+### 3.2	Pilhas I
 
