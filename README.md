@@ -47,8 +47,7 @@ Exemplo prático:
 <p>var elementos = [];</p>
 <p>var topo = -1;</p>
 <p>const max = 10;</p>
-
-
+<br>
 <p>function push(num) {</p>
 	<p>if (topo < max) {</p>
 		<p>topo = topo + 1;</p>
@@ -57,8 +56,7 @@ Exemplo prático:
 	<p>console.log(“Pilha está cheia.”);</p>
 <p>}</p>
 <p>}</p>
-
-
+<br>
 <p>function pop(num) {</p>
 	<p>if (topo != -1) {</p>
 		<p>let num = elementos[topo];</p>
@@ -68,43 +66,43 @@ Exemplo prático:
 	<p>console.log(“Pilha está vazia.”);</p>
 <p>}</p>
 <p>}</p>
-
-
+<br>
 <p>function estaVazia() {</p>
 <p>return topo === -1;</p>
 <p>}</p>
-
-
+<br>
 // para inserir elementos na pilha
 
 push(10);</p>
 push(20);</p>
 push(30);</p>
 
-
+<br>
 // para visualizar como ficou o Array
 console.log(elementos);
 
+<br>
 // para retirar elementos da pilha
 console.log(pop());
 console.log(pop());
 console.log(pop());
 
+<br>
 //usando como exemplo o número 10
 var numDecimal = 10;
 var resto;
-
-console.log(“Hora de empilhar!!”);
-while (numDecimal != 0) {
-	resto = parseInt(numDecimal % 2);
-	push(resto);
-	numDecimal = parseInt(numDecimal / 2);
-}
-
-console.log(“Desempilhando tudo...”);
-while (!estaVazia()){
-	console.log(pop());
-}
+<br>
+<p>console.log(“Hora de empilhar!!”);</p>
+<p>while (numDecimal != 0) {</p>
+	<p>resto = parseInt(numDecimal % 2);</p>
+	<p>push(resto);</p>
+	<p>numDecimal = parseInt(numDecimal / 2);</p>
+<p>}</p>
+<br>
+<p>console.log(“Desempilhando tudo...”);</p>
+<p>while (!estaVazia()){</p>
+	<p>console.log(pop());</p>
+<p>}</p>
 
 
 ## 3.4	Filas e Listas
