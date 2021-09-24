@@ -44,37 +44,43 @@ Exemplo prático:
   <li>Criar um arquivo “pilha.js”</li>
 </ul>
   
-var elementos = [];
-var topo = -1;
-const max = 10;
+<p>var elementos = [];</p>
+<p>var topo = -1;</p>
+<p>const max = 10;</p>
 
-function push(num) {
-	if (topo < max) {
-		topo = topo + 1;
-		elementos[topo] = num;
-} else {
-	console.log(“Pilha está cheia.”);
-}
-}
 
-function pop(num) {
-	if (topo != -1) {
-		let num = elementos[topo];
-		topo = topo – 1;
-		return num;
-} else {
-	console.log(“Pilha está vazia.”);
-}
-}
+<p>function push(num) {</p>
+	<p>if (topo < max) {</p>
+		<p>topo = topo + 1;</p>
+		<p>elementos[topo] = num;</p>
+<p>} else {</p>
+	<p>console.log(“Pilha está cheia.”);</p>
+<p>}</p>
+<p>}</p>
 
-function estaVazia() {
-return topo === -1;
-}
+
+<p>function pop(num) {</p>
+	<p>if (topo != -1) {</p>
+		<p>let num = elementos[topo];</p>
+		<p>topo = topo – 1;</p>
+		<p>return num;</p>
+<p>} else {</p>
+	<p>console.log(“Pilha está vazia.”);</p>
+<p>}</p>
+<p>}</p>
+
+
+<p>function estaVazia() {</p>
+<p>return topo === -1;</p>
+<p>}</p>
+
 
 // para inserir elementos na pilha
-push(10);
-push(20);
-push(30);
+
+push(10);</p>
+push(20);</p>
+push(30);</p>
+
 
 // para visualizar como ficou o Array
 console.log(elementos);
