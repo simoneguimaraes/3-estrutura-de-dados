@@ -38,6 +38,68 @@ Existem regras para como inserir valores dentro da estrutura.
 
 ## 3.3	Pilhas II
 
+Exemplo prático:
+<ul>
+  <li>Abrir o VS Code</li>
+  <li>Criar um arquivo “pilha.js”</li>
+</ul>
+  
+var elementos = [];
+var topo = -1;
+const max = 10;
+
+function push(num) {
+	if (topo < max) {
+		topo = topo + 1;
+		elementos[topo] = num;
+} else {
+	console.log(“Pilha está cheia.”);
+}
+}
+
+function pop(num) {
+	if (topo != -1) {
+		let num = elementos[topo];
+		topo = topo – 1;
+		return num;
+} else {
+	console.log(“Pilha está vazia.”);
+}
+}
+
+function estaVazia() {
+return topo === -1;
+}
+
+// para inserir elementos na pilha
+push(10);
+push(20);
+push(30);
+
+// para visualizar como ficou o Array
+console.log(elementos);
+
+// para retirar elementos da pilha
+console.log(pop());
+console.log(pop());
+console.log(pop());
+
+//usando como exemplo o número 10
+var numDecimal = 10;
+var resto;
+
+console.log(“Hora de empilhar!!”);
+while (numDecimal != 0) {
+	resto = parseInt(numDecimal % 2);
+	push(resto);
+	numDecimal = parseInt(numDecimal / 2);
+}
+
+console.log(“Desempilhando tudo...”);
+while (!estaVazia()){
+	console.log(pop());
+}
+
 
 ## 3.4	Filas e Listas
 
