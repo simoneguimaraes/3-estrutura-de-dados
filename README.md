@@ -79,18 +79,20 @@ push(30);</p>
 
 <br>
 // para visualizar como ficou o Array
+<br>
 console.log(elementos);
-
 <br>
 // para retirar elementos da pilha
-console.log(pop());
-console.log(pop());
-console.log(pop());
-
 <br>
-//usando como exemplo o número 10
-var numDecimal = 10;
-var resto;
+console.log(pop());
+<br>
+console.log(pop());
+<br>
+console.log(pop());
+<br>
+<p>//usando como exemplo o número 10</p>
+<p>var numDecimal = 10;</p>
+<p>var resto;</p>
 <br>
 <p>console.log(“Hora de empilhar!!”);</p>
 <p>while (numDecimal != 0) {</p>
