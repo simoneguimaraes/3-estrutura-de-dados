@@ -43,7 +43,7 @@ Exemplo prático:
   <li>Abrir o VS Code</li>
   <li>Criar um arquivo “pilha.js”</li>
 </ul>
-<br>var elementos = [];
+var elementos = [];
 <br>var topo = -1;
 <br>const max = 10;
 <br>
