@@ -43,7 +43,6 @@ Exemplo prático:
   <li>Abrir o VS Code</li>
   <li>Criar um arquivo “pilha.js”</li>
 </ul>
-<br>
 <br>var elementos = [];
 <br>var topo = -1;
 <br>const max = 10;
@@ -70,6 +69,7 @@ Exemplo prático:
 <br>function estaVazia() {
 <br>return topo === -1;
 <br>}
+<br>
 <br>// para inserir elementos na pilha
 <br>push(10);
 <br>push(20);
@@ -87,7 +87,6 @@ console.log(elementos);
 <br>//usando como exemplo o número 10
 <br>var numDecimal = 10;
 <br>var resto;
-<br>
 <br>
 <br>console.log(“Hora de empilhar!!”);
 <br>while (numDecimal != 0) {
