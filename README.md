@@ -177,6 +177,31 @@ Quando você tem um volume muito grande, a busca sequencial não é a melhor for
 
 ## 3.7	Algoritimos de Ordenação I
 
+### Bolha (bubble sort):
+
+Dado um conjunto de valores, eu pego o primeiro valor em relação ao próximo. Se o valor que eu estou comparando for maior que o próximo, eu troco eles de posição. <br>A ideia é que eu possa deixar os valores pesados no fundo e os valores leves no início.
+<br>
+<br>var valores = [8, 7, 6, 5, 4, 3, 2, 1];
+<br>
+<br>function ordena() {
+<br>let inicio = 0;
+<br>let fim = 8;
+<br>let tmp;
+<br>
+<br>for (vezes = 0; vezes < 8; vezes++){
+<br>	for (pos = inicio; pos < fim – 1 - vezes; pos++) {
+<br>		if(valores[pos] > valores [pos + 1]) {
+<br>			tmp = valores[pos];
+<br>			valores[pos] = valores [pos + 1]);
+<br>			valores [pos + 1]) = tmp;
+<br>}
+<br>}
+<br>}
+<br>
+<br>ordena();
+<br>console.log(“vetor ordenado…”);
+<br>console.log(valores);
+
 
 ## 3.8	Algoritimos de Ordenação II
 
