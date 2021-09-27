@@ -125,8 +125,8 @@ As listas são conceitos para valores que são armazenados em conjuntos de taman
 ## 3.5	Busca I
 
 A busca de elementos é feita por meio dos conjuntos;
-<br>
-<br>Busca sequencial:
+
+### Busca sequencial
 <ul>
 	<li>A partir de um determinado conjunto de valores, quero encontrar em que posição está um valor específico;</li>
 	<li>Se não encontrar o valor, retornar um valor inválido;</li>
@@ -147,6 +147,8 @@ Exemplo:
 <br> console.log(busca(50));
 
 ## 3.6	Busca II
+
+### Busca binária
 
 Quando você tem um volume muito grande, a busca sequencial não é a melhor forma.
 <br>
@@ -177,7 +179,7 @@ Quando você tem um volume muito grande, a busca sequencial não é a melhor for
 
 ## 3.7	Algoritimos de Ordenação I
 
-### Bolha (bubble sort):
+### Bolha (bubble sort)
 
 Dado um conjunto de valores, eu pego o primeiro valor em relação ao próximo. Se o valor que eu estou comparando for maior que o próximo, eu troco eles de posição. <br>A ideia é que eu possa deixar os valores pesados no fundo e os valores leves no início.
 <br>
