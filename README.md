@@ -124,6 +124,27 @@ As listas são conceitos para valores que são armazenados em conjuntos de taman
 
 ## 3.5	Busca I
 
+A busca de elementos é feita por meio dos conjuntos;
+<br>
+<br>Busca sequencial:
+<ul>
+	<li>A partir de um determinado conjunto de valores, quero encontrar em que posição está um valor específico;</li>
+	<li>Se não encontrar o valor, retornar um valor inválido;</li>
+</ul>
+Exemplo:
+<br> var valores = [5, 8, 10, 22, 45, 38];
+<br> 
+<br> function busca(num) {
+<br> 	for (i = 0; i < 6; i++) {
+<br> 		if (num == valores[i]) {
+<br> 			return i;
+<br> 		}
+<br> 	}
+<br> 	return -1;
+<br> }
+<br> 
+<br> console.log(busca(10));
+<br> console.log(busca(50));
 
 ## 3.6	Busca II
 
