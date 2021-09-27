@@ -148,6 +148,32 @@ Exemplo:
 
 ## 3.6	Busca II
 
+Quando você tem um volume muito grande, a busca sequencial não é a melhor forma.
+<br>
+<br>A busca binária é mais eficiente, mas os dados do vetor precisam estar ordenados.
+<br>
+<br>function buscaBin(num) {
+<br>	let inicio, fim;
+<br>	let meio.
+<br>	Inicio = 0;
+<br>	fim = 9;
+<br>	while (inicio <= fim) {
+<br>		meio = parseInt((inicio + fim) / 2);
+<br>			if(num == valores[meio]){
+<br>			return meio;
+<br>		} else {
+<br>			if (num > valores[meio]) {
+<br>				inicio = meio + 1;
+<br>	} else {
+<br>		fim = meio – 1;
+<br> }
+<br>}
+<br>}
+<br>	return -1;
+<br>}
+<br>
+<br>console.log(buscaBin(10));
+<br>console.log(buscaBin(50));
 
 ## 3.7	Algoritimos de Ordenação I
 
