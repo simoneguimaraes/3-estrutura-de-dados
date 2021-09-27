@@ -34,7 +34,8 @@ Existem regras para como inserir valores dentro da estrutura.
   <li>Push (empurrar): inserir elementos; Ex: 3 2 4 1</li> 
   <li>Pop: retirar elementos; Ex: 1 4 2 3</li>
 </ul>
-
+<br>O modelo da pilha é <strong>last in, first out (o último que entra é o primeiro que sai)</strong>.
+<br>
 
 ## 3.3	Pilhas II
 
@@ -103,6 +104,23 @@ console.log(elementos);
 
 ## 3.4	Filas e Listas
 
+### Filas
+Para nós é um modelo bastante intuitivo, pois podemos pensar na fila do banco, fila de prioridade no aeroporto, fila da padaria. 
+<br>
+<br>O modelo da fila é <strong>first in, first out (o primeiro que entra é o primeiro que sai)</strong>:
+<ul>
+	<li>o próximo elemento a entrar: vai entrar na última posição;</li>
+	<li>o próximo elemento a sair: vai ser o que está na primeira posição.</li>
+</ul>
+Ex: você atende a fila normal depois que tiver atendido a fila prioritária.
+<br>
+<br>Para as pilhas e filas, em geral, se trabalha no modelo de vetor com tamanhos limitados (capacidade máxima) para facilitar a implementação.
+
+### Listas
+
+As listas são conceitos para valores que são armazenados em conjuntos de tamanho “infinito”. Você pode ocupar o quanto tiver de memória e não o valor máximo que pré-estipulou. 
+<br>
+<br>Ex: ordem alfabética, ordem crescente, ordem decrescente.
 
 ## 3.5	Busca I
 
