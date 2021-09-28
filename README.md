@@ -206,5 +206,3 @@ Dado um conjunto de valores, eu pego o primeiro valor em relação ao próximo. 
 
 
 ## 3.8	Algoritimos de Ordenação II
-
-
